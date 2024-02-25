@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
            }
        }
        img.animate().translationYBy(1000f).setDuration(300);
-        //tick tak toe game
    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
