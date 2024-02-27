@@ -35,6 +35,7 @@
         app:srcCompat="@drawable/grid1" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="420dp"
         android:orientation="vertical"
@@ -54,8 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
                 android:contentDescription="@string/todoapp"
+                android:onClick="playerTap"
                 android:padding="20sp"
                 android:tag="0"
                 tools:ignore="NestedWeights" />
@@ -65,10 +66,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
                 android:contentDescription="@string/todoapp"
-                android:tag="1"
-                android:padding="20sp"/>
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="1" />
 
 
             <ImageView
@@ -76,10 +77,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
                 android:contentDescription="@string/todoapp"
-                android:tag="2"
-                android:padding="20sp"/>
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="2" />
 
         </LinearLayout>
 
@@ -94,10 +95,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="playerTap"
                 android:contentDescription="@string/todoapp"
-                android:tag="3"
-                android:padding="20sp" />
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="3" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -165,5 +166,19 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:text="status"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
